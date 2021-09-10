@@ -22,13 +22,13 @@ provider "aws" {
 # TERRAFORM USER
 # //////////////////////////////
 data "aws_iam_user" "terraform" {
-  user_name = "terraform"
+  user_name = "terraform2"
 }
 
 # //////////////////////////////
 # S3 BUCKET
 # //////////////////////////////
-resource "aws_s3_bucket" "red30-tfremotestate" {
+resource "aws_s3_bucket" "red30-tfremotestate2" {
   bucket = var.bucket_name
   force_destroy = true
   acl = "private"
